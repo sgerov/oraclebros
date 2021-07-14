@@ -1,0 +1,18 @@
+{
+    "favicon": "https://raw.githubusercontent.com/jayfk/statuspage/master/template/favicon.png",
+    "footer": "Status page hosted by GitHub, generated with <a href='https://github.com/jayfk/statuspage'>jayfk/statuspage</a>",
+    "logo": "https://raw.githubusercontent.com/jayfk/statuspage/master/template/logo.png",
+    "status-labels": {
+        "degraded performance": "FFA500",
+        "investigating": "1192FC",
+        "major outage": "FF4D4D"
+    },
+    "system-color": "171717",
+    "templates": [
+        "template.html",
+        "style.css",
+        "statuspage.js",
+        "translations.ini"
+    ],
+    "title": "Status"
+}
