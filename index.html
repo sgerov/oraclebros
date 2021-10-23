@@ -30,6 +30,10 @@
 			<section class="container" id="main">
 				
 					
+					<div class="panel major outage">
+						<span data-l10n-id="Major-outage">Major outage</span> <span data-l10n-id="on">on</span> Radix Olympia Backup Node.
+					</div>
+					
 					<div class="panel investigating">
 						<span data-l10n-id="Investigating">Investigating</span> <span data-l10n-id="on">on</span> Radix Olympia Validator.
 					</div>
@@ -44,7 +48,7 @@
 					</li>
 					
 					<li>
-						Radix Olympia Backup Node <span class="status operational" data-l10n-id="operational">operational</span>
+						Radix Olympia Backup Node <span class="status major outage" data-l10n-id="major-outage">major outage</span>
 					</li>
 					
 					<li>
@@ -59,6 +63,27 @@
 
 				<h4 data-l10n-id="incidents">Incidents</h4>
 				
+					
+					<div class="incident">
+						<span class="date moment">2021-10-23 11:49:11 UTC</span>
+
+						
+							<span class="label major outage float-right" data-l10n-id="major-outage">major outage</span>
+						
+						
+							<span class="label system float-right">Radix Olympia Backup Node</span>
+						
+						<hr/>
+
+						<span class="title">Backup node migration</span>
+						<p>We've switched where our Backup node was running to a new location so it will be sync-ing for some time. We aren't starting from a DB backup this time but syncing through network since we don't want to affect our Main node.</p>
+
+<p>If an issue with our main node arose during this period we would transfer quickly all data to the backup location and spin it up quickier.</p>
+
+<p>We also took the opportunity to update the backup to <code>1.0.2</code> (main was already migrated)</p>
+
+						
+					</div>
 					
 					<div class="incident">
 						<span class="date moment">2021-10-23 11:08:19 UTC</span>
