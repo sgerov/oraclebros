@@ -41,6 +41,10 @@
 				</div>
 				
 					
+					<div class="panel degraded performance">
+						<span data-l10n-id="Degraded-performance">Degraded performance</span> <span data-l10n-id="on">on</span> Monitoring system.
+					</div>
+					
 					<div class="panel investigating">
 						<span data-l10n-id="Investigating">Investigating</span> <span data-l10n-id="on">on</span> Radix Olympia Validator.
 					</div>
@@ -51,7 +55,7 @@
 				<ul class="systems">
 					
 					<li>
-						Monitoring system <span class="status operational" data-l10n-id="operational">operational</span>
+						Monitoring system <span class="status degraded performance" data-l10n-id="degraded-performance">degraded performance</span>
 					</li>
 					
 					<li>
@@ -72,6 +76,23 @@
 				
 					
 					<div class="incident">
+						<span class="date moment">2021-12-07 18:34:26 UTC</span>
+
+						
+							<span class="label degraded performance float-right" data-l10n-id="degraded-performance">degraded performance</span>
+						
+						
+							<span class="label system float-right">Monitoring system</span>
+						
+						<hr/>
+
+						<span class="title">Terraform resources</span>
+						<p>We lost our terraform state file due to a hardware switch, we need to recover our resources through <code>import</code>. We still can manage our infrastructure in the meantime</p>
+
+						
+					</div>
+					
+					<div class="incident">
 						<span class="date moment">2021-12-07 16:22:52 UTC</span>
 
 						
@@ -88,6 +109,10 @@
 						
 							<p><em>Update <span class="moment">2021-12-07 17:19:36 UTC</span></em></p>
 							<p>We didn't switch immediately to <code>1.0.3</code> as it was released since we were happy with our UPTIME and weren't too worried about the memory leak since we have plenty of RAM. We are planning to do the switch currently though</p>
+
+						
+							<p><em>Update <span class="moment">2021-12-07 18:33:00 UTC</span></em></p>
+							<p>Since some nodes are experiencing issues in the network now (AWS issues) we will wait for our upgrade. Also we would prefer to get our UPTIME higher before the switch since we won't be unregistering our node but aiming for 0 downtime.</p>
 
 						
 					</div>
