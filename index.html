@@ -110,63 +110,6 @@
 						
 					</div>
 					
-					<div class="incident">
-						<span class="date moment">2021-12-10 08:13:00 UTC</span>
-
-						
-							<span class="label operational float-right" data-l10n-id="resolved">resolved</span>
-						
-						
-							<span class="label system float-right">Radix Olympia Validator</span>
-						
-						<hr/>
-
-						<span class="title">Down to 99.2%</span>
-						<p>During the night we got some more missed proposals and didn't recover our uptime. We are looking at our options right now</p>
-
-						
-							<p><em>Update <span class="moment">2021-12-10 15:32:28 UTC</span></em></p>
-							<p>Switched to Backup node while we are cleaning up the address book of the main node. We suspect that our address book is way out of sync due to peer connection timeouts in our logs.</p>
-
-						
-							<p><em>Update <span class="moment">2021-12-10 15:41:12 UTC</span></em></p>
-							<p>Cleaned up Main node address book and switched back to it. Backup node up and running again as well</p>
-
-						
-							<p><em>Update <span class="moment">2021-12-10 15:43:42 UTC</span></em></p>
-							<p>Node is stable again, we operated during 6 minutes with our backup node while we cleaned up the address of the main one.</p>
-
-<p><img src="https://user-images.githubusercontent.com/1419573/145600999-3e0dd3a1-e72d-4094-9c8d-cefab3f000b2.png" alt="image" /></p>
-
-						
-							<p><em>Update <span class="moment">2021-12-10 15:44:56 UTC</span></em></p>
-							<p>Our alerting was quite unstable lately, we expect the issue to be gone after the Address book cleanup which removed around 530 addresses that aren't in use anymore. You can see our alerts in the last 7 days below:</p>
-
-<p><img src="https://user-images.githubusercontent.com/1419573/145601245-696a6cb2-c049-4dbc-941d-4453b637de6e.png" alt="image" /></p>
-
-						
-							<p><em>Update <span class="moment">2021-12-10 15:46:25 UTC</span></em></p>
-							<p>No downtime during the nodes switches within our Kubernetes cluster now that our terraform resources are back up and running and we can do the switches as usual. We will be monitoring closely the situation</p>
-
-						
-							<p><em>Update <span class="moment">2021-12-10 15:51:58 UTC</span></em></p>
-							<p>We saw no network issues nor CPU/RAM/Provider downtime during the high alerting period.</p>
-
-<p><img src="https://user-images.githubusercontent.com/1419573/145602067-b2100b00-75e8-44c0-b1e8-8c6b2490417b.png" alt="image" />
-<img src="https://user-images.githubusercontent.com/1419573/145602258-9ea165de-1c15-4853-b6df-e069a45f8c5a.png" alt="image" />
-<img src="https://user-images.githubusercontent.com/1419573/145602289-337de5ab-a81f-43f0-a82b-edcbe96985f7.png" alt="image" /></p>
-
-						
-							<p><em>Update <span class="moment">2021-12-11 14:40:30 UTC</span></em></p>
-							<p>Our reverse proxy (NGINX) had lost it's connection to our main node and was not allowing connection which caused timeouts for our node. The issue has been fixed and we added further alarming to detect if such case happened again. We expect our uptime to recover from now on</p>
-
-						
-							<p><em>Update <span class="moment">2021-12-18 10:11:35 UTC</span></em></p>
-							<p>Took us some time till the uptime recovered but we are back to normal now</p>
-
-						
-					</div>
-					
 				
 			</section>
 
