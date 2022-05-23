@@ -40,9 +40,11 @@
 					Stake address: rv1qg0qqwmjun43knkyyhh5kavhljy6ml5ap5hnzr2ahqwyt7n0rqq56pehq5n
 				</div>
 				
-					<div class="panel operational" data-l10n-id="systems-operational">
-						All Systems Operational
+					
+					<div class="panel major outage">
+						<span data-l10n-id="Major-outage">Major outage</span> <span data-l10n-id="on">on</span> Radix Olympia Validator.
 					</div>
+					
 				
 
 				<h4 data-l10n-id="systems">Systems</h4>
@@ -57,7 +59,7 @@
 					</li>
 					
 					<li>
-						Radix Olympia Validator <span class="status operational" data-l10n-id="operational">operational</span>
+						Radix Olympia Validator <span class="status major outage" data-l10n-id="major-outage">major outage</span>
 					</li>
 					
 					<li>
@@ -68,7 +70,28 @@
 
 				<h4 data-l10n-id="incidents">Incidents</h4>
 				
-					<em data-l10n-id="no-incidents">No incidents in the past 90 days.</em>
+					
+					<div class="incident">
+						<span class="date moment">2022-05-23 18:30:42 UTC</span>
+
+						
+							<span class="label major outage float-right" data-l10n-id="major-outage">major outage</span>
+						
+						
+							<span class="label system float-right">Radix Olympia Validator</span>
+						
+						<hr/>
+
+						<span class="title">Kubernetes cluster certificate expired</span>
+						<p>Our kubernetes cluster certificate expired which brought down both the node and all the monitoring tooling around it. This meant a major loss in stake for our node and we will be decommissioning all our resources.</p>
+
+						
+							<p><em>Update <span class="moment">2022-05-23 18:31:15 UTC</span></em></p>
+							<p>Successfully renewed the certificate so we can access to the services and deregister our Node from the network.</p>
+
+						
+					</div>
+					
 				
 			</section>
 
